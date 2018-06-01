@@ -2,13 +2,19 @@
   "name": "n5-complete-guide",
   "version": "0.0.0",
   "license": "MIT",
+  "config":{
+    "max_old_space_size":3072
+  
+  },
+  
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng": "ng-alias",
+    "start": "ng-alias serve",
+    "prebuild": "setup-ng-alias",
+    "build": "ng-alias build",
+    "test": "ng-alias test",
+    "lint": "ng-alias lint",
+    "e2e": "ng-alias e2e"
   },
   "private": true,
   "dependencies": {
